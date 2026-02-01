@@ -23,12 +23,19 @@
 auth.json
 
 # ================================
+# Filament Assets (auto-generated)
+# ================================
+/public/css/filament
+/public/js/filament
+
+# ================================
 # Database
 # ================================
 *.sqlite
 *.sqlite-journal
 /database/*.sqlite
 /database/*.sqlite-journal
+/database/database.sqlite
 
 # ================================
 # Logs & Cache
@@ -36,6 +43,9 @@ auth.json
 *.log
 /storage/logs/*
 !storage/logs/.gitkeep
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
 /.phpunit.cache
 .phpunit.result.cache
 .phpactor.json
@@ -51,6 +61,9 @@ auth.json
 *.swp
 *.swo
 *~
+.project
+.settings
+*.sublime-*
 
 # ================================
 # OS Generated
@@ -66,6 +79,7 @@ ehthumbs.db
 Homestead.json
 Homestead.yaml
 docker-compose.override.yml
+.docker
 
 # ================================
 # Build & Compiled
@@ -73,6 +87,7 @@ docker-compose.override.yml
 /public/mix-manifest.json
 npm-debug.log
 yarn-error.log
+package-lock.json
 
 # ================================
 # Backup Files
@@ -80,8 +95,16 @@ yarn-error.log
 *.bak
 *.backup
 *.old
+*.orig
 
 # ================================
 # AI Agent Documentation
 # ================================
 agent.md
+
+# ================================
+# Testing
+# ================================
+/coverage
+.phpunit.result.cache
+
