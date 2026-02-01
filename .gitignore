@@ -1,0 +1,87 @@
+# ================================
+# Environment & Secrets
+# ================================
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+
+# ================================
+# Laravel Specific
+# ================================
+/vendor
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/pail
+/bootstrap/cache/*.php
+auth.json
+
+# ================================
+# Database
+# ================================
+*.sqlite
+*.sqlite-journal
+/database/*.sqlite
+/database/*.sqlite-journal
+
+# ================================
+# Logs & Cache
+# ================================
+*.log
+/storage/logs/*
+!storage/logs/.gitkeep
+/.phpunit.cache
+.phpunit.result.cache
+.phpactor.json
+
+# ================================
+# IDE & Editor
+# ================================
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+*.swp
+*.swo
+*~
+
+# ================================
+# OS Generated
+# ================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+# ================================
+# Homestead / Docker
+# ================================
+Homestead.json
+Homestead.yaml
+docker-compose.override.yml
+
+# ================================
+# Build & Compiled
+# ================================
+/public/mix-manifest.json
+npm-debug.log
+yarn-error.log
+
+# ================================
+# Backup Files
+# ================================
+*.bak
+*.backup
+*.old
+
+# ================================
+# AI Agent Documentation (Optional - uncomment if you want to keep private)
+# ================================
+# agent.md
